@@ -1,10 +1,62 @@
-// !Functionalities of  heart icon 
+// *Functionalities of  heart icon 
 const heartCounts=document.getElementById("total_Hearts")
 const hearts=document.getElementsByClassName("fa-heart")
 let count=0;
 for(const heart of hearts){
-      heart.addEventListener("click",(e) =>{
+      heart.addEventListener("click",() =>{
+        
         count++;
         heartCounts.textContent = count;
       });
 }
+
+//  *function of Call Buttons
+let coins=100;
+const totalCoins=document.getElementById("total_Coins")
+const callButtons=document.getElementsByClassName("call_btn")
+
+const clearButton=document.getElementById("clear_button")
+
+for(const button of callButtons){
+    button.addEventListener("click",()=>{
+
+const serviceName = button.dataset.service;
+const serviceNumber= button.dataset.number;
+
+if(coins>=20){
+    coins=coins-20;
+    totalCoins.textContent=coins;
+    alert(`calling ${serviceName} at ${serviceNumber}`)
+
+// callhisoty 
+const callhistorry= document.getElementById("call_history_div");
+const currentTime=new Date().toLocaleTimeString();
+const div=document.createElement("div")
+div.innerHTML=`
+<div class=" mt-3 mb-3.5 p-5 rounded-2xl max-w-lg mx-auto form bg-[#FAFAFA]" id="">
+<div class="flex justify-between items-center gap-3 ">
+  <div class="leftdiv">
+    <h1 class="text-xl font-bold">${serviceName}</h1>
+    <p>${serviceNumber} </p>
+  </div>
+  <div class="rightdiv">
+    <p> ${currentTime} </p>
+  </div>
+</div>
+</div>
+`
+callhistorry.appendChild(div)
+}
+else{
+    alert("Not enough coins")
+    return;
+}
+
+
+    })
+}
+ const callhistory=[];
+//* funtionalitis of  call history 
+
+
+

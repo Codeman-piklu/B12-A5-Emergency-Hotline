@@ -34,7 +34,7 @@
       </div>
 
       <div class="flex gap-2 md:gap-4 items-center px-4 md:px-6 py-2 md:py-4 rounded-3xl bg-[#41FF6b53] hover:bg-[#41FF6b]">
-        <span>100</span>
+        <span id="total_Coins">100</span>
         <img class="w-5 h-5 md:w-6 md:h-6" src="./assets/coin.png" alt="">
       </div>
 
@@ -79,7 +79,7 @@
             <span>Copy</span>
           </div>
         </button>
-      <button class="px-6 md:px-10 py-2 md:py-3 rounded-lg bg-[#00A63E] text-white hover:bg-[#008C34] transition">
+      <button data-service="National Emergency" data-number="999" class="call_btn px-6 md:px-10 py-2 md:py-3 rounded-lg bg-[#00A63E] text-white hover:bg-[#008C34] transition">
           <div class="flex gap-2 md:gap-3 items-center">
             <i class="fa-solid fa-phone"></i>
             <span>Call</span>
@@ -89,7 +89,7 @@
     </div>
       <!-- *Police Helpline -->
 
-    <div class="bg-white p-5 md:p-8 rounded-xl shadow-2xl">
+    <div id="police_helpline" class="bg-white p-5 md:p-8 rounded-xl shadow-2xl">
       <div class="flex justify-between items-center pb-3">
         <span class="px-3 md:px-4 py-2 md:py-3 bg-[#FFE3E2] rounded-3xl">
           <img class="w-10 h-10 md:w-12 md:h-12" src="./assets/police.png" alt="">
@@ -108,7 +108,7 @@
             <span>Copy</span>
           </div>
         </button>
-       <button class="px-6 md:px-10 py-2 md:py-3 rounded-lg bg-[#00A63E] text-white hover:bg-[#008C34] transition">
+       <button data-service="Police Helpline" data-number="999" class="call_btn px-6 md:px-10 py-2 md:py-3 rounded-lg bg-[#00A63E] text-white hover:bg-[#008C34] transition">
           <div class="flex gap-2 md:gap-3 items-center">
             <i class="fa-solid fa-phone"></i>
             <span>Call</span>
@@ -118,7 +118,7 @@
     </div>
       <!-- *Fire Service -->
 
-    <div class="bg-white p-5 md:p-8 rounded-xl shadow-2xl">
+    <div id="fire_helpline" class="bg-white p-5 md:p-8 rounded-xl shadow-2xl">
       <div class="flex justify-between items-center pb-3">
         <span class="px-3 md:px-4 py-2 md:py-3 bg-[#FFE3E2] rounded-3xl">
           <img class="w-10 h-10 md:w-12 md:h-12" src="./assets/fire-service.png" alt="">
@@ -137,7 +137,7 @@
             <span>Copy</span>
           </div>
         </button>
-       <button class="px-6 md:px-10 py-2 md:py-3 rounded-lg bg-[#00A63E] text-white hover:bg-[#008C34] transition">
+       <button data-service="Fire Service" data-number="999" class="call_btn px-6 md:px-10 py-2 md:py-3 rounded-lg bg-[#00A63E] text-white hover:bg-[#008C34] transition">
           <div class="flex gap-2 md:gap-3 items-center">
             <i class="fa-solid fa-phone"></i>
             <span>Call</span>
@@ -146,7 +146,7 @@
       </div>
     </div>
              <!-- *Ambulance Service -->
-    <div class="bg-white p-5 md:p-8 rounded-xl shadow-2xl">
+    <div id="ambulance_helpline" class="bg-white p-5 md:p-8 rounded-xl shadow-2xl">
       <div class="flex justify-between items-center pb-3">
         <span class="px-3 md:px-4 py-2 md:py-3 bg-[#FFE3E2] rounded-3xl">
           <img class="w-10 h-10 md:w-12 md:h-12" src="./assets/ambulance.png" alt="">
@@ -165,7 +165,7 @@
             <span>Copy</span>
           </div>
         </button>
-       <button class="px-6 md:px-10 py-2 md:py-3 rounded-lg bg-[#00A63E] text-white hover:bg-[#008C34] transition">
+       <button data-service="Ambulance" data-number="1994-999999" class="call_btn px-6 md:px-10 py-2 md:py-3 rounded-lg bg-[#00A63E] text-white hover:bg-[#008C34] transition">
           <div class="flex gap-2 md:gap-3 items-center">
             <i class="fa-solid fa-phone"></i>
             <span>Call</span>
@@ -174,7 +174,7 @@
       </div>
     </div>
    <!-- *Women and Child Helpline -->
-    <div class="bg-white p-5 md:p-8 rounded-xl shadow-2xl">
+    <div id="women" class="bg-white p-5 md:p-8 rounded-xl shadow-2xl">
       <div class="flex justify-between items-center pb-3">
         <span class="px-3 md:px-4 py-2 md:py-3 bg-[#FFE3E2] rounded-3xl">
           <img class="w-10 h-10 md:w-12 md:h-12" src="./assets/emergency.png" alt="">
@@ -193,7 +193,7 @@
             <span>Copy</span>
           </div>
         </button>
-       <button class="px-6 md:px-10 py-2 md:py-3 rounded-lg bg-[#00A63E] text-white hover:bg-[#008C34] transition">
+       <button data-service="Women & Child Helpline" data-number="109" class="call_btn px-6 md:px-10 py-2 md:py-3 rounded-lg bg-[#00A63E] text-white hover:bg-[#008C34] transition">
           <div class="flex gap-2 md:gap-3 items-center">
             <i class="fa-solid fa-phone"></i>
             <span>Call</span>
@@ -203,7 +203,7 @@
     </div>
  <!-- *Anti-Corruption Helpline -->
 
-    <div class="bg-white p-5 md:p-8 rounded-xl shadow-2xl">
+    <div id="corruption_helpline" class="bg-white p-5 md:p-8 rounded-xl shadow-2xl">
       <div class="flex justify-between items-center pb-3">
         <span class="px-3 md:px-4 py-2 md:py-3 bg-[#FFE3E2] rounded-3xl">
           <img class="w-10 h-10 md:w-12 md:h-12" src="./assets/emergency.png" alt="">
@@ -222,7 +222,7 @@
             <span>Copy</span>
           </div>
         </button>
-       <button class="px-6 md:px-10 py-2 md:py-3 rounded-lg bg-[#00A63E] text-white hover:bg-[#008C34] transition">
+       <button data-service="Anti-Corruption Helpline" data-number="106" class=" call_btn px-6 md:px-10 py-2 md:py-3 rounded-lg bg-[#00A63E] text-white hover:bg-[#008C34] transition">
           <div class="flex gap-2 md:gap-3 items-center">
             <i class="fa-solid fa-phone"></i>
             <span>Call</span>
@@ -233,7 +233,7 @@
 
                    <!-- *Electricity Helpline -->
 
-    <div class="bg-white p-5 md:p-8 rounded-xl shadow-2xl">
+    <div id="electricity_helpline" class="bg-white p-5 md:p-8 rounded-xl shadow-2xl">
       <div class="flex justify-between items-center pb-3">
         <span class="px-3 md:px-4 py-2 md:py-3 bg-[#FFE3E2] rounded-3xl">
           <img class="w-10 h-10 md:w-12 md:h-12" src="./assets/emergency.png" alt="">
@@ -252,7 +252,7 @@
             <span>Copy</span>
           </div>
         </button>
-       <button class="px-6 md:px-10 py-2 md:py-3 rounded-lg bg-[#00A63E] text-white hover:bg-[#008C34] transition">
+       <button data-service="Electricity Helpline" data-number="16216" class="call_btn px-6 md:px-10 py-2 md:py-3 rounded-lg bg-[#00A63E] text-white hover:bg-[#008C34] transition">
           <div class="flex gap-2 md:gap-3 items-center">
             <i class="fa-solid fa-phone"></i>
             <span>Call</span>
@@ -261,7 +261,7 @@
       </div>
     </div>
                    <!-- *Brac Helpline -->
-    <div class="bg-white p-5 md:p-8 rounded-xl shadow-2xl">
+    <div id="brac_helpline" class="bg-white p-5 md:p-8 rounded-xl shadow-2xl">
       <div class="flex justify-between items-center pb-3">
         <span class="px-3 md:px-4 py-2 md:py-3 bg-[#FFE3E2] rounded-3xl">
           <img class="w-10 h-10 md:w-12 md:h-12" src="./assets/brac.png" alt="">
@@ -280,7 +280,7 @@
             <span>Copy</span>
           </div>
         </button>
-      <button class="px-6 md:px-10 py-2 md:py-3 rounded-lg bg-[#00A63E] text-white hover:bg-[#008C34] transition">
+      <button data-service="Brac Helpline" data-number="16445" class="call_btn px-6 md:px-10 py-2 md:py-3 rounded-lg bg-[#00A63E] text-white hover:bg-[#008C34] transition">
           <div class="flex gap-2 md:gap-3 items-center">
             <i class="fa-solid fa-phone"></i>
             <span>Call</span>
@@ -289,7 +289,7 @@
       </div>
     </div>
         <!-- *Bangladesh Railway Helpline  -->
-    <div class="bg-white p-5 md:p-8 rounded-xl shadow-2xl">
+    <div id="railway" class="bg-white p-5 md:p-8 rounded-xl shadow-2xl">
       <div class="flex justify-between items-center pb-3">
         <span class="px-3 md:px-4 py-2 md:py-3 bg-[#FFE3E2] rounded-3xl">
           <img class="w-10 h-10 md:w-12 md:h-12" src="./assets/Bangladesh-Railway.png" alt="">
@@ -308,7 +308,7 @@
             <span>Copy</span>
           </div>
         </button>
-     <button class="px-6 md:px-10 py-2 md:py-3 rounded-lg bg-[#00A63E] text-white hover:bg-[#008C34] transition">
+     <button data-service="Bangladesh Railway Helpline" data-number="163" class="call_btn px-6 md:px-10 py-2 md:py-3 rounded-lg bg-[#00A63E] text-white hover:bg-[#008C34] transition">
           <div class="flex gap-2 md:gap-3 items-center">
             <i class="fa-solid fa-phone"></i>
             <span>Call</span>
@@ -327,10 +327,18 @@
     <div class="flex justify-between items-center">
        <div class="flex items-center gap-5"> <i class="fa-solid fa-clock"></i>
       <h1 class="text-2xl font-bold">Call history</h1></div>
-      <button class="px-8 py-3 bg-[#00A63E] rounded-4xl hover:bg-[#00A63E70] text-white">Clear</button>
+      <button id="clear_button" class="px-8 py-3 bg-[#00A63E] rounded-4xl hover:bg-[#00A63E70] text-white">Clear</button>
     </div>
         
+
+
+    <div id="call_history_div" class="">
+</div>
+
+</div>
+ </div>
       </div>
+    
       
           
         
@@ -341,6 +349,7 @@
 </section>
 
 </main>
+
 <script src="index.js"></script>
 </body>
 </html>
