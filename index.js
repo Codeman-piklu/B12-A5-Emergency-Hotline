@@ -15,7 +15,7 @@ let coins=100;
 const totalCoins=document.getElementById("total_Coins")
 const callButtons=document.getElementsByClassName("call_btn")
 
-const clearButton=document.getElementById("clear_button")
+
 
 for(const button of callButtons){
     button.addEventListener("click",()=>{
@@ -28,7 +28,7 @@ if(coins>=20){
     totalCoins.textContent=coins;
     alert(`calling ${serviceName} at ${serviceNumber}`)
 
-// callhisoty 
+//* callhisoty 
 const callhistorry= document.getElementById("call_history_div");
 const currentTime=new Date().toLocaleTimeString();
 const div=document.createElement("div")
@@ -55,8 +55,26 @@ else{
 
     })
 }
- const callhistory=[];
-//* funtionalitis of  call history 
+//* clear button
+const clearButton=document.getElementById("clear_button")
+.addEventListener("click",()=>{
+ document.getElementById("call_history_div").innerText=""
+})
+//* copy button 
+let copyCount=0;
+const copyButtons=document.getElementsByClassName("copy_btn");
+const copyCounts=document.getElementById("copy_count")
 
+for(const copybutton of copyButtons){
+  copybutton.addEventListener("click",()=>{
 
+const serviceNumbers=copybutton.dataset.number;
+
+ navigator.clipboard.writeText(serviceNumbers).then(()=>{
+      alert(`Number ${serviceNumbers} copied!`);
+      copyCount++;
+      copyCounts.textContent=copyCount;
+  })
+ });
+}
 
